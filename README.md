@@ -12,3 +12,8 @@ docker run -d \
   -e WEBAPI_KEY=sadasdasdas \
   ghcr.io/admin8800/soga
 ```
+
+# nezha v0
+```
+https://cdn.jsdelivr.net/gh/admin8800/soga@main/agent.sh
+```
