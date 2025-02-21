@@ -5,7 +5,7 @@ WORKDIR /app
 ENV URL=https://github.com/vaxilu/soga/releases/latest/download/soga-linux-amd64.tar.gz
 
 RUN apk add --no-cache wget tar && \
-    wget $URL -O soga-linux-amd64.tar.gz && \
+    wget $URL && \
     tar -xzvf soga-linux-amd64.tar.gz && \
     rm soga-linux-amd64.tar.gz
 
