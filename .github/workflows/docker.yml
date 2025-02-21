@@ -49,3 +49,17 @@ jobs:
             --build-arg VERSION=${{ env.VERSION }} .
         env:
           GHCR_PUBLIC: true
+
+      # 将仓库代码打包保存到Release，可以去掉这部分
+      - name: Create GitHub release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: ${{ env.VERSION }}
+          draft: false
+          prerelease: false
+          body: |
+            ## Changes
+            - See the [commit history](https://github.com/${{ github.repository }}/commits/${{ env.VERSION }}) for more details.
