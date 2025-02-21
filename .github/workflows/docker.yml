@@ -42,7 +42,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker buildx build --push \
-            # 注意你的基础镜像有没有下列架构
+            --file ./Dockerfile \
             --platform linux/amd64 \
             --tag ghcr.io/${{ github.repository }}:${{ env.VERSION }} \
             --tag ghcr.io/${{ github.repository }}:latest \
