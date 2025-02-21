@@ -2,6 +2,7 @@
 ```
 docker run -d \
   --name soga \
+  --restart always \
   --network host \
   -e TYPE=v2board \
   -e SERVER_TYPE=ss \
