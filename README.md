@@ -10,11 +10,11 @@ docker run -d \
   -e SOGA_KEY=sadasdsadasdasas \
   -e WEBAPI_URL=https://example.com \
   -e WEBAPI_KEY=sadasdasdas \
-  ghcr.io/admin8800/soga
+  ghcr.io/haniskik/soga
 ```
 
 # nezha v0
 将面板中复制所得的指令中的sh的raw文件url替换成
 ```
-https://cdn.jsdelivr.net/gh/admin8800/soga@main/agent.sh
+https://cdn.jsdelivr.net/gh/haniskik/soga@main/agent.sh
 ```
