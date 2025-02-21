@@ -14,6 +14,7 @@ docker run -d \
 ```
 
 # nezha v0
+将面板中复制所得的指令中的sh的raw文件url替换成
 ```
 https://cdn.jsdelivr.net/gh/admin8800/soga@main/agent.sh
 ```
